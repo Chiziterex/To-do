@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+} 
+ 
+* {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: "Poppins", "Reem Kufi", "Montserrat", sans-serif;
+  background-color: rgb(205, 206, 194, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todolist{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  border: 0;
+  border-bottom: 3px solid rgb(236, 18, 18);
+  color: #0c0a0af6;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='text']{
+  font-size: 1.6rem;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #0c0a0af6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgb(12, 10, 10) ;
 }
+
+button{
+  font-size: 1.5rem;
+  padding: 11.5px 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(236, 18, 18);
+  transition: background-color 0.5s ease;
+}
+
+button:hover{
+  background-color: rgb(12, 10, 10);
+}
+
+ol{
+  padding: 0;
+}
+
+li{
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color:rgb(255, 255, 255) ;
+  border: 3px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.text{
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.delete-button{
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-left:7px ;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.move-button{
+  font-size: 1.9rem;
+  padding: 0;
+  margin-left:7px ;
+  border-radius: 5px;
+  background-color: rgb(28, 159, 247);
+}
+
