@@ -34,7 +34,7 @@ h1{
   color: #0c0a0af6;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 input[type='text']{
@@ -85,12 +85,13 @@ li{
 }
 
 .delete-button{
-  font-size: 1.2rem;
-  padding: 10px;
+  font-size: 1.9rem;
+  padding: 0px;
   margin-left:7px ;
   border-radius: 5px;
   text-transform: capitalize;
   font-weight: 200;
+  background-color: rgb(28, 159, 247);
 }
 
 .move-button{
@@ -99,5 +100,53 @@ li{
   margin-left:7px ;
   border-radius: 5px;
   background-color: rgb(28, 159, 247);
+}
+
+@media (max-width: 960px) {
+  
+}
+
+@media (max-width: 600px) {
+  .todolist{
+      padding-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  input[type='text']{
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .input-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button{
+    font-size: 1.2rem;
+    padding: 13px 20px;
+  }
+
+  li{
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-bottom: 0.3rem;
+  }
+
+  .delete-button{
+    font-size: 1.8rem;
+    padding: 0px;
+    margin-left:7px ;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 200;
+  }
+  
+  .move-button{
+    font-size: 1.8rem;
+    padding: 0;
+    margin-left:7px ;
+  }
 }
 
